@@ -50,7 +50,7 @@ media-code-video/
 ## 專案專屬規則
 
 - **不用影片生成模型**：畫面一律程式算出來。底圖、貼圖要用生圖時在作品的 `製作紀錄.md` 寫明，並照發布資訊範本揭露。
-- **選畫風只從 `styles/` 挑**（照 `styles/README.md`）。`vendor/lemo-opuscar/styles/` 是未篩過的上游全集，含已從畫風庫移除的配方（點名公司、作品或在世藝術家），**不要從那裡選**。
+- **選畫風只從 `styles/` 挑**（照 `styles/README.md`）。`vendor/lemo-opuscar/styles/` 是上游最新版、沒有審查：`tools/vendor.sh` 更新後可能多出點名公司、作品或在世藝術家的配方，版本也跟作品署名的 `styles/` 不同，**不要從那裡選**。
 - **`vendor/` 只當參考**：上游的流程說明（例如「問一次就不再問」）跟本專案的工作約定衝突時，以本專案為準——仍要先出計畫或分鏡給使用者確認。
   不要把上游的 `AGENTS.md`、`CLAUDE.md`、`SKILL.md`、`plugin/` 抓回來（`tools/vendor.sh` 已排除）。
 - **awesome-opus5-5-videos 的提示詞版權屬各原作者**：只在 `vendor/` 本機讀，不複製進 git 追蹤的檔案；作品參考了哪一則，在 `製作紀錄.md` 寫出處連結。
