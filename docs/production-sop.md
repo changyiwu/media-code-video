@@ -7,22 +7,21 @@
 | 我想知道 | 去哪裡查 |
 |---|---|
 | 開一件新作品的順序、資料夾怎麼放 | 本檔第一節 |
-| 選什麼畫風、畫風怎麼畫 | [畫風庫](../styles/README.md) |
-| 一支用程式做的片怎麼導（聲音、節奏、鏡頭、表演） | `vendor/lemo-opuscar/DIRECTOR.md`（參考，本專案規則優先） |
-| 怎麼用程式把片做出來（逐格算圖、配音、混音、出片） | `vendor/lemo-opuscar/TECHNIQUE.md`；本專案自己的做法見〈動態設計作品集〉`製作紀錄.md` |
-| 別人用 Opus 5.5 寫程式做片的提示詞 | `vendor/awesome-opus5-5-videos/README.md`、`prompts/` |
+| 選什麼畫風、畫風怎麼畫 | [畫風索引](../畫風索引.md) |
+| 一支用程式做的片怎麼導（聲音、節奏、鏡頭、表演） | [upstream/lemo-opuscar/DIRECTOR.md](../upstream/lemo-opuscar/DIRECTOR.md)、`upstream/huashu-art-motion/references/`（參考，本專案規則優先） |
+| 怎麼用程式把片做出來（逐格算圖、配音、混音、出片） | [upstream/lemo-opuscar/TECHNIQUE.md](../upstream/lemo-opuscar/TECHNIQUE.md)、`core/README.md`；本專案自己的做法見〈動態設計作品集〉`製作紀錄.md` |
+| 某個畫風的示範片怎麼寫的 | `upstream/lemo-opuscar/styles/<畫風>/demo/` |
+| 別人用 Opus 5.5 寫程式做片的提示詞 | [awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos)（上網看，不收進專案） |
 | 人物、動作、畫面變化要守哪些規則 | `media-music-video/docs/production-sop.md` 第五節〈動畫／歌詞 MV 的畫面規則〉 |
 | 無頭瀏覽器開幾個程序、成品先寫哪裡 | 同上，第五節〈程式算圖：平行程序數〉 |
 | 試片怎麼選、驗收紀錄怎麼寫 | 同上，第五節〈試片與驗收紀錄〉 |
 | 發布前怎麼清 metadata、怎麼驗 | 同上，第四節 |
 | 社群文案、AI 揭露怎麼寫 | [發布資訊範本](../templates/發布資訊範本.md) |
 
-`vendor/` 不進 git，沒有的話先跑 `sh tools/vendor.sh`。
-
 ## 一、開新作品
 
-1. 建 `output/<類型>/<作品名>/`（作品名用中文標題），放一份 `製作紀錄.md`，開頭就有三個區塊：**使用者的決定**、**進度表**、**定稿清單**（檔名＋規格＋路徑）。
-2. 從 `styles/` 挑 3–5 個畫風給使用者選；參考了 awesome-opus5-5-videos 的哪一則提示詞，在製作紀錄寫出處連結。
+1. 建 `output/<作品名>/`（作品名用中文標題），放一份 `製作紀錄.md`，開頭就有三個區塊：**使用者的決定**、**進度表**、**定稿清單**（檔名＋規格＋路徑）。
+2. 照 `畫風索引.md` 挑 3–5 個畫風給使用者選；參考了 awesome-opus5-5-videos 的哪一則提示詞，在製作紀錄寫出處連結。
 3. 先出計畫或分鏡給使用者看，再做一個 10–15 秒試片確認風格，才做全片。
 4. 原始專案放 `work/`；逐格 PNG、配樂 wav 等中間檔放本機暫存資料夾，成品也先寫本機暫存，算完再搬進 `work/`。
 5. 使用者確認定案後，成品移到作品資料夾最上層、改名 `<作品名>.mp4`（`_社群版.mp4`、`_手機版.mp4`），舊版移到 `舊版/`，製作紀錄記定稿路徑。

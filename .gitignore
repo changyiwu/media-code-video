@@ -8,9 +8,6 @@ credentials.*
 # 交接檔含真實電腦名與本機路徑，只走雲端硬碟同步，不進公開 repo
 handoff.md
 
-# 參考 repo 的本機副本，由 tools/vendor.sh 產生（awesome-opus5-5-videos 的提示詞版權屬原作者，不重新散布）
-vendor/
-
 # 暫存
 scratch/
 __pycache__/
