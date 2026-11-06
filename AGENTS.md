@@ -22,12 +22,13 @@
   `styles/` 只放本專案自寫的畫風，總索引在根目錄 `畫風索引.md`；刪除 `vendor/` 與 `tools/vendor.sh`，awesome-opus5-5-videos 只留連結；
   拿掉 `output/動態設計/` 類型層，作品資料夾改成 `output/<作品名>/`
 - 2026-11-06：第一支新作品〈一滴墨〉（水墨無限縮放、一鏡到底可循環、9:16、36 秒）定案；試出來的規則寫進 `docs/production-sop.md` 第二節
+- 2026-11-06：第二支作品〈城市生長〉（低多邊形城市從空地長出來、Three.js、9:16、35 秒、可循環）定案；程式 3D、生長對拍、換地點接回開頭的規則寫進 `docs/production-sop.md` 第二節
 
 ## 目標與路線圖
 
 - [x] 階段一：從 `media-music-video` 拆出，搬入〈動態設計作品集〉與畫風庫
 - [x] 階段二：用 lemo-opuscar 的導演方法做第一支新作品〈一滴墨〉，把試出來的本專案規則寫進 `docs/production-sop.md`（2026-11-06）
-- [ ] 階段三：第二支作品〈城市生長〉（空地長成城市），沿用 SOP 第二節的做法並補充新規則
+- [x] 階段三：第二支作品〈城市生長〉（空地長成城市），沿用 SOP 第二節的做法並補充新規則（2026-11-06）
 
 ## 資料夾結構
 
@@ -48,8 +49,10 @@ media-code-video/
 ├── output/              所有產出（不進 git，只走雲端硬碟同步）；一件作品一個資料夾 `output/<作品名>/`
 │   ├── 動態設計作品集/   15 秒 showreel（Canvas 2D 逐格＋Headless Edge 擷取＋numpy 配樂）；最上層是定案成品與封面
 │   │   └── work/         reel/（Canvas 版原始專案）、hf/（HyperFrames 比較版，配樂共用）
-│   └── 一滴墨/           36 秒循環水墨（五層套疊無限縮放＋numpy 配樂）；最上層是定案成品、發布資訊
-│       └── work/         film.html＋src/（ink.js 水墨引擎、film.js 套疊與鏡頭）、tools/（render.mjs 算圖、score.py 配樂）、定格/、舊版/
+│   ├── 一滴墨/           36 秒循環水墨（五層套疊無限縮放＋numpy 配樂）；最上層是定案成品、發布資訊
+│   │   └── work/         film.html＋src/（ink.js 水墨引擎、film.js 套疊與鏡頭）、tools/（render.mjs 算圖、score.py 配樂）、定格/、舊版/
+│   └── 城市生長/         35 秒循環低多邊形城市（Three.js 逐格＋事件驅動 numpy 配樂）；最上層是定案成品、封面、發布資訊
+│       └── work/         film.html＋src/（story.js 時間表與鏡頭、world.js 城市與生長、post.js 後製）、vendor/three/、tools/（render.mjs、score.py、beatcheck.mjs）、定格/、舊版/
 └── scratch/             暫存（不進 git）
 ```
 
